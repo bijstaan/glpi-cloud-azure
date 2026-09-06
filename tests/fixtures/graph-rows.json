@@ -1,0 +1,74 @@
+{
+  "running_vm": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.Compute/virtualMachines/web-01",
+    "name": "web-01",
+    "type": "microsoft.compute/virtualMachines",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "tags": { "client": "acme", "env": "prod", "cost-centre": 4021 },
+    "sku": { "name": "Standard_D2s_v5" },
+    "properties": {
+      "provisioningState": "Succeeded",
+      "hardwareProfile": { "vmSize": "Standard_D2s_v5" },
+      "extended": { "instanceView": { "powerState": { "code": "PowerState/running", "displayStatus": "VM running" } } }
+    }
+  },
+  "stopped_vm": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.Compute/virtualMachines/web-02",
+    "name": "web-02",
+    "type": "microsoft.compute/virtualMachines",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "properties": {
+      "provisioningState": "Succeeded",
+      "extended": { "instanceView": { "powerState": { "code": "PowerState/deallocated" } } }
+    }
+  },
+  "disk": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.Compute/disks/web-01-os",
+    "name": "web-01_OsDisk",
+    "type": "microsoft.compute/disks",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "properties": { "diskState": "Attached", "diskSizeGB": 128, "provisioningState": "Succeeded" }
+  },
+  "storage_account": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.Storage/storageAccounts/acmebackups",
+    "name": "acmebackups",
+    "type": "microsoft.storage/storageAccounts",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "kind": "StorageV2",
+    "properties": {
+      "statusOfPrimary": "available",
+      "allowBlobPublicAccess": true,
+      "provisioningState": "Succeeded"
+    }
+  },
+  "app_service": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.Web/sites/acme-portal",
+    "name": "acme-portal",
+    "type": "microsoft.web/sites",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "properties": { "state": "Running", "provisioningState": "Succeeded" }
+  },
+  "unclaimed": {
+    "id": "/subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/rg-prod/providers/Microsoft.SignalRService/SignalR/acme-hub",
+    "name": "acme-hub",
+    "type": "microsoft.signalrservice/SignalR",
+    "location": "uksouth",
+    "resourceGroup": "rg-prod",
+    "subscriptionId": "11111111-2222-3333-4444-555555555555",
+    "properties": { "provisioningState": "Succeeded" }
+  },
+  "no_id": {
+    "name": "orphan",
+    "type": "microsoft.compute/virtualMachines"
+  }
+}
