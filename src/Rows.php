@@ -43,7 +43,7 @@ final class Rows
 
         $attributes = [
             // Always verbatim: a type mapping we get wrong has to be
-            // recoverable without re-collecting a customer's estate.
+            // recoverable without re-collecting an entity's estate.
             'azure_type'      => $azure_type,
             'location'        => (string) ($row['location'] ?? ''),
             'resource_group'  => (string) ($row['resourceGroup'] ?? ''),

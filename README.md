@@ -30,7 +30,7 @@ the total reconciles with the invoice.
 
 ## Credentials
 
-An Entra ID app registration in the customer's tenant — tenant id, client id,
+An Entra ID app registration in the entity's tenant — tenant id, client id,
 client secret — plus two read-only role assignments:
 
 ```sh

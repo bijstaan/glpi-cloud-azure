@@ -8,7 +8,7 @@
  * Cost Management: the periods asked for, and the columns read back.
  *
  * The column mapping is the one that would produce plausible wrong numbers on a
- * customer's invoice. Cost Management returns `columns` and `rows` separately,
+ * entity's invoice. Cost Management returns `columns` and `rows` separately,
  * and the order of the columns is not contractual — it varies with the
  * aggregation and grouping asked for. Reading `row[0]` as the cost works right
  * up until it does not, and nothing about the result looks wrong.

@@ -20,7 +20,7 @@ use Generator;
  * `properties.columns` and `properties.rows`, and the column *order* is not
  * contractual — it varies with the aggregation and grouping asked for, and has
  * changed between API versions. Reading `row[0]` as the cost is the kind of bug
- * that produces plausible numbers on a customer's invoice, so everything here
+ * that produces plausible numbers on an entity's invoice, so everything here
  * is looked up by column name.
  *
  * **A month is re-queried until it stops changing.** Azure restates a closed

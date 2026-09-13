@@ -21,7 +21,7 @@ namespace GlpiPlugin\Glpicloudazure;
  *
  * **The Azure type string is preserved verbatim on the resource** (see
  * {@see Rows}), so a mapping we get wrong is recoverable without re-collecting
- * a customer's estate.
+ * an entity's estate.
  *
  * Comparisons are case-insensitive because Resource Graph returns
  * `microsoft.compute/virtualMachines` while the type filter is written

@@ -10,7 +10,7 @@
  * Both are deliberately empty of schema. This plugin owns no tables: every row
  * it produces belongs to glpi-cloud, stamped with the `azure` provider key, and
  * uninstalling this plugin leaves that inventory in place — marked as having no
- * provider rather than deleted. A year of a customer's cloud history is not
+ * provider rather than deleted. A year of an entity's cloud history is not
  * something a plugin removal should quietly take with it.
  */
 function plugin_glpicloudazure_install()
