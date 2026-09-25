@@ -14,7 +14,7 @@
 use GlpiPlugin\Glpicloudazure\Provider;
 
 define('PLUGIN_GLPICLOUDAZURE_VERSION', '0.1.0');
-define('PLUGIN_GLPICLOUDAZURE_MIN_GLPI', '11.0');
+define('PLUGIN_GLPICLOUDAZURE_MIN_GLPI', '12.0');
 
 function plugin_init_glpicloudazure()
 {
